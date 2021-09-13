@@ -1,0 +1,16 @@
+<div class="container">
+    <h4 class="text-center main-title">Türkiyeden Teknoloji Haberleri</h4>
+    <div class="row">
+      <div *ngFor="let news of allNews" class="col-lg-4">
+        <div class="news">
+          <img src="{{ news.urlToImage }}" class="img" alt="" width="100%" />
+          <h4 class="title">{{ news.title }}</h4>
+          <p class="description">{{ news.description }}</p>
+          <a href="{{ news.url }}" class="href" target="_blank"
+            >Haberin Detayı İçin Tıklayınız</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  

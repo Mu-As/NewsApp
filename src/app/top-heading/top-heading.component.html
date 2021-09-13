@@ -1,0 +1,15 @@
+<div class="container">
+  <h4 *ngIf="allNews" class="main-title text-center">Türkiyede Öne Çıkan Başlıklar</h4>
+  <div class="row">
+    <div *ngFor="let news of allNews" class="col-lg-4">
+      <div class="news">
+        <img src="{{ news.urlToImage }}" class="img" alt="" width="100%" />
+        <h4 class="title">{{ news.title }}</h4>
+        <p class="description">{{ news.description }}</p>
+        <a href="{{ news.url }}" class="href" target="_blank"
+          >Haberin Detayı İçin Tıklayınız</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
